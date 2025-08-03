@@ -30,6 +30,9 @@ Você precisa armazenar histórico e melhorar a IA a cada rodada.
             string MaisUsados;
             int ValorAnterior=-1;
             int Jogada;
+            int Victorias = 0;
+            int Derrotas=0;
+            int Empate = 0;
 
 
 
@@ -88,6 +91,13 @@ Você precisa armazenar histórico e melhorar a IA a cada rodada.
                             Console.Clear();
                             Console.WriteLine("Voce Jogou:{0} \nEu jogei: {1}", (Jogadas)Jogada, (Jogadas)Valor);
                             Console.WriteLine("\t\tResultado \n \t\t{0}", p1(Valor, Jogada));
+                        if (p1(Valor, Jogada) == "Parabens Voce Venceu")
+                            Victorias++;
+                        else if (p1(Valor, Jogada) == "Ouh Voce Perdeu")
+                            Derrotas++;
+                        else
+                            Empate++;
+
                             IA_Story.Add(Jogada);
                         }
 
@@ -136,6 +146,14 @@ Você precisa armazenar histórico e melhorar a IA a cada rodada.
                             Console.Clear();
                             Console.WriteLine("Voce Jogou:{0} \nEu jogei: {1}", (Jogadas)Jogada, (Jogadas)Valor);
                             Console.WriteLine("\t\tResultado \n \t\t{0}", p1(Valor, Jogada));
+                           
+
+                             if (p1(Valor, Jogada) == "Parabens Voce Venceu")
+                            Victorias++;
+                        else if (p1(Valor, Jogada) == "Ouh Voce Perdeu")
+                            Derrotas++;
+                        else
+                            Empate++;
                             IA_Story.Add(Jogada);
 
 
