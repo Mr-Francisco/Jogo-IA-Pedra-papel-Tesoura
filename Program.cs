@@ -97,7 +97,7 @@ Você precisa armazenar histórico e melhorar a IA a cada rodada.
                             Derrotas++;
                         else
                             Empate++;
-
+                             Console.WriteLine("Tabela: |Victorias: {0} | |Derrotas: {1} | |Empate: {2} | ", Victorias, Derrotas,Empate);
                             IA_Story.Add(Jogada);
                         }
 
@@ -146,7 +146,7 @@ Você precisa armazenar histórico e melhorar a IA a cada rodada.
                             Console.Clear();
                             Console.WriteLine("Voce Jogou:{0} \nEu jogei: {1}", (Jogadas)Jogada, (Jogadas)Valor);
                             Console.WriteLine("\t\tResultado \n \t\t{0}", p1(Valor, Jogada));
-                           
+                      
 
                              if (p1(Valor, Jogada) == "Parabens Voce Venceu")
                             Victorias++;
@@ -154,6 +154,8 @@ Você precisa armazenar histórico e melhorar a IA a cada rodada.
                             Derrotas++;
                         else
                             Empate++;
+
+                                  Console.WriteLine("Tabela: |Victorias: {0} | |Derrotas: {1} | |Empate: {2} | ", Victorias, Derrotas,Empate);
                             IA_Story.Add(Jogada);
 
 
